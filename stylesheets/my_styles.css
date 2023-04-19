@@ -29,7 +29,7 @@ html, body, p {
     font-family: warnock-pro,Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
 }
 p{
-    padding-left: 10px;
+    padding-left: 0px;
 }
 body{
     padding: 30px
@@ -42,7 +42,7 @@ body{
 
 .popupauthor{
     border: white;
-    margin-top: -30px;
+    margin-top: -35px;
     margin-right: -10px;
     position: relative;
     z-index: 2;
@@ -56,6 +56,14 @@ body{
     clear: both;
     display:inline-block;
 }
+
+em{
+    font-style: normal;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #e3a343;
+    text-underline-offset: 2px;
+  }
 
 footer{
     bottom: 10px;
