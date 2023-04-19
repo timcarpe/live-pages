@@ -1,0 +1,45 @@
+.booktitle{
+    background-color: rgb(65, 140, 238);
+    color: azure;
+    font-size:40px;
+    padding: 3%;
+    line-height: 1;
+    display: block;
+}
+table.resumeheaders{
+    padding-left: 10px;
+}
+.resumeheaders, .resumeheaders tr, .resumeheaders tr th{
+    border-style: none;
+    border: 0;
+    border-color:transparent;
+    border-spacing: 0px;
+    padding: 0;
+    margin: 0;
+}
+.resumeheaders tr th + th{
+    text-align: right;
+}
+
+ul li{
+    text-align: justify;
+}
+
+html, body, p {
+    font-family: warnock-pro,Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
+}
+p{
+    padding-left: 10px;
+}
+body{
+    padding: 30px
+}
+
+.headerimage{
+    padding:0;
+
+}
+
+footer{
+    bottom: 10px;
+}

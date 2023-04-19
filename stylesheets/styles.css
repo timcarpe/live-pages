@@ -109,7 +109,7 @@ header {
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
-
+/*
 header ul {
   list-style:none;
   height:40px;
@@ -152,12 +152,6 @@ header ul a:hover {
 header ul a:active {
   background-color:#f0f0f0;
 }
-
-strong {
-  color:#222;
-  font-weight:500;
-}
-
 header ul li + li + li {
   border-right:none;
   width:89px;
@@ -167,6 +161,11 @@ header ul a strong {
   font-size:14px;
   display:block;
   color:#222;
+}
+*/
+strong {
+  color:#222;
+  font-weight:500;
 }
 
 section {
@@ -251,7 +250,7 @@ footer {
   body {
     padding:15px;
   }
-
+/*
   header ul {
     width:99%;
   }
@@ -259,6 +258,7 @@ footer {
   header li, header ul li + li + li {
     width:33%;
   }
+  */
 }
 
 @media print {
