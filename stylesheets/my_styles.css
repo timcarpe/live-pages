@@ -1,13 +1,26 @@
+
+
 .booktitle{
     background-color: rgb(65, 140, 238);
     color: azure;
     font-size:40px;
     padding: 3%;
+    padding-right: 20%;
     line-height: 1;
     display: block;
+    font-family: 'Cormorant Garamond', sans-serif;
 }
 table.resumeheaders{
     padding-left: 10px;
+}
+header li{
+    list-style-type: '- ';
+}
+header li > *{
+    margin: 0;
+}
+header ul{
+    padding-inline-start: 15px;
 }
 .resumeheaders, .resumeheaders tr, .resumeheaders tr th{
     border-style: none;
@@ -16,6 +29,12 @@ table.resumeheaders{
     border-spacing: 0px;
     padding: 0;
     margin: 0;
+}
+
+.resumeheaders tr th > *{
+    padding: 0;
+    line-height: 1;
+    margin-bottom: 10px;
 }
 .resumeheaders tr th + th{
     text-align: right;
@@ -37,19 +56,26 @@ body{
 
 .headerimage{
     padding:0;
-
+    margin-bottom: -10px;
 }
 
 .popupauthor{
     border: white;
-    margin-top: -35px;
-    margin-right: -10px;
+    margin-top: -15%;
+    margin-right: -2%;
     position: relative;
     z-index: 2;
     float: right;
     width: 30%;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 5px solid white;
+}
+section{
+    border:1px solid #e5e5e5;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
 }
 
 .clearfix{
@@ -61,7 +87,7 @@ em{
     font-style: normal;
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: #e3a343;
+    text-decoration-color: #49c2ff4f;
     text-underline-offset: 2px;
   }
 
