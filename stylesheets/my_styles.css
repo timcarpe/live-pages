@@ -9,26 +9,37 @@
     line-height: 1;
     display: block;
     font-family: 'Cormorant Garamond', sans-serif;
+    margin-bottom: 3px;
 }
-table.resumeheaders{
-    padding-left: 10px;
+
+table.education{
+    margin-top: 10px;
 }
+
 header li{
     list-style-type: '- ';
 }
+
 header li > *{
     margin: 0;
 }
+
 header ul{
     padding-inline-start: 15px;
 }
+
 .resumeheaders, .resumeheaders tr, .resumeheaders tr th{
     border-style: none;
     border: 0;
-    border-color:transparent;
+    border-color: transparent;
     border-spacing: 0px;
     padding: 0;
     margin: 0;
+}
+
+table.resumeheaders{
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .resumeheaders tr th > *{
@@ -36,8 +47,10 @@ header ul{
     line-height: 1;
     margin-bottom: 10px;
 }
+
 .resumeheaders tr th + th{
     text-align: right;
+    vertical-align: top;
 }
 
 ul li{
@@ -47,9 +60,11 @@ ul li{
 html, body, p {
     font-family: warnock-pro,Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
 }
+
 p{
     padding-left: 0px;
 }
+
 body{
     padding: 30px
 }
@@ -61,7 +76,7 @@ body{
 
 .popupauthor{
     border: white;
-    margin-top: -15%;
+    margin-top: -9%;
     margin-right: -2%;
     position: relative;
     z-index: 2;
@@ -70,6 +85,7 @@ body{
     border-radius: 50%;
     border: 5px solid white;
 }
+
 section{
     border:1px solid #e5e5e5;
     border-width: 0px;
@@ -83,6 +99,11 @@ section{
     display:inline-block;
 }
 
+.publication{
+    text-align: justify;
+    text-indent: -20px;
+    margin-left: 20px;
+}
 em{
     font-style: normal;
     color: inherit;

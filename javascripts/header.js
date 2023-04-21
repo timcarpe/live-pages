@@ -1,14 +1,14 @@
 document.write('\
 <header>\
-<img class="headerimage" src="bwheaderbg.png">\
+<img class="headerimage" src="img\\headermountainsbw.png">\
 <h1 class="booktitle">Timothy R. Carpenter</h1>\
-<img class="popupauthor" src="mecrop.jpg">\
+<img class="popupauthor" src="img\\mecrop.jpg">\
 <p>Online Resume and Portfolio</p>\
 <ul>\
-<li><p>Educator</p></li>\
-<li><p>Programmer</p></li>\
-<li><p>Volunteer</p></li>\
-<li><p>Explorer</p></li>\
+<li><a href="#resume">Resume</a></li>\
+<li><a href="#projects">Projects</a></li>\
+<li><a href="#teaching">Teaching</a></li>\
+<li><a href="#life">Life</a></li>\
 </ul>\
 </header>\
 ');
