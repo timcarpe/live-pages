@@ -1,14 +1,15 @@
 document.write('\
 <header>\
-<img class="headerimage" src="img\\headermountainsbw.png">\
 <h1 class="booktitle">Timothy R. Carpenter</h1>\
 <img class="popupauthor" src="img\\mecrop.jpg">\
-<p>Online Resume and Portfolio</p>\
+<p class="subtitle">Online Resume and Portfolio</p>\
 <ul>\
 <li><a href="#resume">Resume</a></li>\
 <li><a href="#projects">Projects</a></li>\
 <li><a href="#teaching">Teaching</a></li>\
 <li><a href="#life">Life</a></li>\
 </ul>\
+<br class="clearfix">\
+<p class="headerquote">I am particularly interested in rethinking education in a world with AI &#128640;</p>\
 </header>\
 ');
