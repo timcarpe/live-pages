@@ -1,7 +1,9 @@
 document.write('\
 <header>\
+<div class="headerwrapper">\
 <h1 class="booktitle">Timothy R. Carpenter</h1>\
 <img class="popupauthor" src="img\\mecrop.jpg">\
+</div>\
 <p class="subtitle">Online Resume and Portfolio</p>\
 <ul>\
 <li><a href="#resume">Resume</a></li>\
