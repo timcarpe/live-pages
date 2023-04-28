@@ -6,10 +6,10 @@ document.write('\
 </div>\
 <p class="subtitle">Online Resume and Portfolio</p>\
 <ul>\
-<li><a href="#resume">Resume</a></li>\
-<li><a href="#projects">Projects</a></li>\
-<li><a href="#teaching">Teaching</a></li>\
-<li><a href="#life">Life</a></li>\
+<li><a href="index.html">Resume</a></li>\
+<li><a href="projects.html">Projects</a></li>\
+<li><a href="teaching.html">Teaching</a></li>\
+<li><a href="interests.html">Interests</a></li>\
 </ul>\
 <br class="clearfix">\
 <p class="headerquote">I am particularly interested in rethinking education in a world with AI &#128640;</p>\

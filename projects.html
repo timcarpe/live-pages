@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Timothy Carpenter</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/my_styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link href="https://fonts.cdnfonts.com/css/cormorant-garamond" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <img class="backgroundimage" src="img/bg.png">
+    <div class="wrapper">
+      <script src="javascripts/header.js"></script>
+      <main>
+        <section>
+          <h1>Projects</h1> 
+          <h3>GitHub Repositories</h3>
+          <ul id="repositories" class="projects"/>
+          <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+          <script type="text/javascript">
+          
+          $(document).ready(function () {
+            $.getJSON("https://api.github.com/users/timcarpe/repos", function (data) {
+              for (var i = 0; i < data.length; i++) {
+                (function(name, desc) {
+                  var item = $("<li>");
+                  var commit_url = data[i].commits_url.replace("{/sha}","?per_page=1");
+                  var commit_date = "";
+          
+                  // Get initial commit date
+                  $.getJSON(commit_url, function (commit_data) {
+                    commit_date = commit_data[0].commit.author.date;
+                  }).done(function () {
+                    var initial_commit_date = new Date(commit_date);
+                    initial_commit_date = initial_commit_date.toLocaleDateString();
+          
+                    var a = $("<a>").attr("href", "https://github.com/timcarpe/" + name).text(name);
+                    var span_desc = $("<br><span>").addClass("description").text(desc);
+                    var span_commit = $("<br><span>").addClass("commit").text("Initial commit date: " + initial_commit_date);
+          
+                    item.append(a);
+                    item.append(span_desc);
+                    item.append(span_commit);
+                    $("#repositories").append(item);
+                  });
+                })(data[i].name, data[i].description);
+              }
+            });
+          });
+          </script>
+          
+          
+      </section>
+      </main>
+      <footer>
+        <p><small>Hosted on GitHub Pages</small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>

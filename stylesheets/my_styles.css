@@ -47,6 +47,16 @@ header li > *:hover{
     color:#39c
 }
 
+ul.projects a{
+    font-size: large;
+    margin-left: -20px;
+    margin-bottom: 5px;
+}
+
+ul.projects li{
+    list-style-type: '';
+    margin-bottom: 15px;
+}
 
 .headerquote{
     font-style: italic;
